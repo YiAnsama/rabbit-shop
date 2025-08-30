@@ -12,20 +12,12 @@
       <RouterLink class="nav-item">数码</RouterLink>
       <RouterLink class="nav-item">运动</RouterLink>
       <RouterLink class="nav-item">杂项</RouterLink>
-      <div class="item-wrap">
-        <el-input v-model="input" class="responsive-input" placeholder="请输入商品" clearable>
-          <template #prefix>
-            <el-icon class="el-input__icon">
-              <search />
-            </el-icon>
-          </template>
-        </el-input>
-        <el-icon class="cart-icon">
-          <ShoppingCart />
-        </el-icon>
-      </div>
+      <RouterLink class="nav-item" style="height: 16px;line-height: 16px; border-left: 2px solid #27ba9b;">品牌
+      </RouterLink>
+      <RouterLink class="nav-item">专题</RouterLink>
     </header>
   </div>
+
 
 </template>
 
@@ -38,6 +30,10 @@ const input = ref('')
 <style scoped>
 .header-wrap {
   display: flex;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  width: 100%;
   justify-content: center;
   background-color: white;
 }
